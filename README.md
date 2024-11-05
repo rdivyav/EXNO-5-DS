@@ -196,16 +196,93 @@ plt.show()
 ![image](https://github.com/user-attachments/assets/3d4d2fce-7acd-4dd5-995b-32184833dabc)
 
 ```
-
-
-
+import matplotlib.pyplot as plt
+height=[10,24,36,40,5]
+names=['one','two','three','four','five']
+c1=['red','green']
+c2=['b','g']
+plt.bar(names,height,width=0.8,color=c1)
+plt.xlabel('x-axis')
+plt.ylabel('y-axis')
+plt.title('My bar chart!')
+plt.show()
 ```
 
+![image](https://github.com/user-attachments/assets/f0623b06-2aca-4da5-bfa2-d4124b93c272)
+
+```
+x=[2,8,10]
+y=[11,16,9]
+x2=[3,9,11]
+y2=[6,15,7]
+plt.bar(x,y,color='r')
+plt.bar(x2,y2,color='g')
+plt.title('Bar Graph')
+plt.ylabel('Y axis')
+plt.xlabel('X axis')
+plt.show()
+```
+
+![image](https://github.com/user-attachments/assets/061332b1-cf32-40c0-b78f-1cd57d1b52e2)
+
+```
+import matplotlib.pyplot as plt
+ages=[2,5,70,40,30,45,50,45,43,40,44,60,7,13,57,18,90,77,32,21,20,40]
+range=(0,100)
+bins=10
+plt.hist(ages,bins,range,color='green',histtype='bar',rwidth=0.8)
+plt.xlabel('age')
+plt.ylabel('No .of people')
+plt.title('My histogram')
+plt.show()
+```
+
+![image](https://github.com/user-attachments/assets/380a4968-ed56-4076-a33d-76b42209f722)
+
+```
+import matplotlib.pyplot as plt
+x=[2,1,6,4,2,4,8,9,4,2,4,10,6,4,5,7,7,3,2,7,5,3,5,9,2,1]
+plt.hist(x,bins=10,color='blue',alpha=0.5)
+plt.show()
+```
+
+![image](https://github.com/user-attachments/assets/b20e059c-35ab-4d2b-9477-0b0e828c27cc)
+
+```
+import matplotlib.pyplot as plt
+activities=['eat','sleep','work','play']
+slices=[3,7,8,6]
+colors=['r','y','g','b']
+plt.pie(slices,labels=activities,colors=colors,startangle=90,shadow=True,explode=(0,0.1,0,0),radius=1.2,autopct='%1.1f%%')
+plt.legend()
+plt.show()
+```
+
+![image](https://github.com/user-attachments/assets/327c2548-7b52-4024-88af-c2368fbdb691)
+
+```
+labels='Python','C++','Ruby','Java'
+sizes=[215,130,245,210]
+colors=['gold','yellowgreen','lightcoral','lightskyblue']
+explode=(0.1,0,0,0)
+plt.pie(sizes,explode=explode,labels=labels,colors=colors,autopct='%1.1f%%',shadow=True,)
+plt.axis('equal')
+plt.show()
+```
+![image](https://github.com/user-attachments/assets/aa44ee5a-5fee-4abf-8b89-b81567b6daf2)
+
+```
+activities=['eat','sleep','work','play']
+slices=[3,7,8,6]
+colors=['r','y','g','b']
+plt.pie(slices,labels=activities,colors=colors,startangle=90,shadow=True,explode=(0,0.1,0,0),radius=1.2,autopct='%1.1f%%')
+plt.legend()
+plt.show()
+```
+![image](https://github.com/user-attachments/assets/58d02831-2f66-41b7-aeca-099fb039dcf2)
 
 
 
-
- 
 
 # Result:
  Include your result here
