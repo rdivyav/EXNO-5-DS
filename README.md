@@ -285,4 +285,4 @@ plt.show()
 
 
 # Result:
- Include your result here
+ Thus the Data Visualization using matplot python library for the given datas has been performed.
